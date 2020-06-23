@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Link | Home</title>
+    <link rel="stylesheet" href="static/css/index-style.css">
+</head>
+<body>
+    <!-- HOME NAVIGATION BAR -->
+    <div class="home_navbar">
+        <div class="logo">
+            <img src="static/images/logo.png" alt="">
+        </div>
+
+        <div class="options">
+            <ul>
+                <li>Home</li>
+                <a href="about.html"><li>About</li></a>
+                <a href="admin-area.html"><li>Admin</li></a>
+                <a href="user-area.html"><li>User space</li></a>
+                <li onclick="displayLogin()">Log In</li>
+                <li onclick="displaySignup()">Sign Up</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- LOG IN FORM -->
+    <div id="login">
+        <form action="/login" method="POST">
+            <h3>Tech Link Log In</h3>
+            <input type="text" name="username" placeholder="username" required="1"><br>
+            <input type="password" name="password" placeholder="password" required="1"><br>
+            <button name="login_btn" class="login_btn">log in</button>
+            <button onclick="hideLogin()">cancel</button>
+        </form>
+    </div>
+
+    <!-- SIGN UP FORM -->
+    <div id="signup">
+        <form action="/signup" method="POST">
+            <h3>Tech Link Sign Up</h3>
+            <input name="reg_num" type="text" placeholder="registration number" required="1"><br>
+            <input name="first_name" type="text" placeholder="first name" required="1"><br>
+            <input name="last_name" type="text" placeholder="last name" required="1"><br>
+            <input name="department" type="text" placeholder="department" required="1"><br>
+            <input name="email_address" type="text" placeholder="email address" required="1"><br>
+            <input name="phone_num" type="text" placeholder="phone number" required="1"><br>
+            <input name="username" type="text" placeholder="username" required="1"><br>
+            <input name="password" type="password" placeholder="password" required="1"><br>
+            <input name="confirm_password" type="password" placeholder="confirm password" required="1"><br>
+            <button>sign up</button>
+            <button onclick="hideSignup()">cancel</button>
+        </form>
+    </div>
+
+    <!-- EVENTS IMAGE SLIDER -->
+    <div class="image_slider">
+
+        <div class="slide_images">
+
+            <div class="image_container">
+                <img src="static/images/collabo3D.jpg" alt="">
+                <h3>Create a warm  working atmosphere with your friend</h3>
+            </div>
+
+            <div class="image_container">
+                <img src="static/images/motivate.jpeg" alt="">
+                <h3>Imagine going the same journey with your friends</h3>
+            </div>
+
+            <div class="image_container">
+                <img src="static/images/piper comp kit.webp" alt="">
+                <h3>Work together, play together, prosper together</h3>
+            </div>
+
+            <div class="image_container">
+                <img src="static/images/image (3).jpeg" alt="">
+            </div>
+
+            <div class="image_container">
+                <img src="static/images/image (9).jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- EVENTS/ ANNOUNCEMENTS/ COMPLETED PUBLIC PROJECTS -->
+    <div class="events">
+
+        <h2>TechLink Events/ Announcements/ Projects Hosted:</h2>
+
+        <ul>
+            <li>
+                <img src="static/images/gown hat.jpg" alt="">
+                <h3>Exam Secrets</h3>
+            </li>
+            <li>
+                <img src="static/images/web-conn.jpg" alt="">
+                <h3>TechLink Web App Prototype</h3>
+            </li>
+            <li>
+                <img src="static/images/image (4).jpg" alt="">
+                <h3>Some more events</h3>
+            </li>
+        </ul>
+    </div>
+
+    <footer>&copyTechLink 2020</footer>
+
+    <script src="static/js/index.js"></script>
+</body>
+</html>

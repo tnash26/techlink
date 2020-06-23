@@ -1,0 +1,48 @@
+#about_body{
+    /* border: solid 3px red; */
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.intro,
+.mission,
+.objectives,
+.vision,
+.core_values,
+.operations_focus,
+.committee_responsibilities{
+    margin: 50px auto;
+    padding: 10px;
+    background-color: rgb(236, 230, 201);
+    box-shadow: 0px 1px 1px 0px rgb(71, 61, 212);
+}
+
+.founding_committee{
+    background-color: rgb(71, 61, 212);
+    color: rgb(236, 230, 201);
+    box-shadow: 0px 1px 2px 2px grey;
+    text-align: center;
+}
+
+.each_member{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 10px;
+    margin: 10px;
+}
+
+.each_member img{
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin: auto;
+}
+
+.tatenda,
+.tinashe,
+.valentine{
+    /* background-color: rgb(71, 61, 212); */
+    margin: 10px;
+    padding: 10px;
+}

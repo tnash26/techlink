@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Link | Collaboration</title>
+    <link rel="stylesheet" href="static/css/index-style.css">
+    <link rel="stylesheet" href="static/css/user-area.css">
+</head>
+<body>
+    <!-- USERS COLLABORATION NAVIGATION BAR -->
+    <div class="home_navbar">
+        <div class="logo">
+            <img src="static/images/logo.png" alt="">
+        </div>
+
+        <div class="options">
+            <ul>
+                <a href="admin-area.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="admin-area.html"><li>Admin</li></a>
+                <li>Log Out</li>
+                <li>Sign Up</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- USER INFOR -->
+    <div class="user_infor">
+        <span>logged as: </span>tanderson @ Info Tech
+    </div>
+
+    <!-- POST CREATION AREA -->
+    <div id="create_post">
+        <form action="/create_post" method="POST">
+            <textarea name="post" class="post" placeholder="Type your post here" cols="30" rows="10"></textarea><br>
+            <button class="post_btn" name="post_btn">post</button>
+        </form>
+    </div>
+
+    <!-- POSTS AREA -->
+    
+    <div id="posts_list">
+        <div class="post_one">
+            <div class="user_id">
+                <img src="static/images/image (1).png" alt="">
+                <h3>tanderson @ Info Tech</h3>
+            </div>
+            <p>
+                What is the Matrix?
+            </p>
+
+            <!-- POST INTERACTION FORM -->
+            <form action="/create_comment" method="POST">
+                <input type="text" name="comment" class="comment" placeholder="Type your comment here">
+                <button class="comment_btn" name="comment_btn">comment</button>
+                <button class="view_comments_btn" name="view_comments_btn">view comments</button>
+            </form>
+
+            <!-- COMMENTS SECTION -->
+            <ul>
+                <li></li>
+            </ul>
+            
+        </div>
+
+        <div class="post_one">
+            <div class="user_id">
+                <img src="static/images/image (1).png" alt="">
+                <h3>tanderson @ Info Tech</h3>
+            </div>
+            <p>
+                What is the Matrix?
+            </p>
+
+            <!-- POST INTERACTION FORM -->
+            <form action="/create_comment" method="POST">
+                <input type="text" name="comment" class="comment" placeholder="Type your comment here">
+                <button class="comment_btn" name="comment_btn">comment</button>
+                <button class="view_comments_btn" name="view_comments_btn">view comments</button>
+            </form>
+
+            <!-- COMMENTS SECTION -->
+            <ul>
+                <li></li>
+            </ul>
+            
+        </div>
+
+        <div class="post_one">
+            <div class="user_id">
+                <img src="static/images/image (1).png" alt="">
+                <h3>tanderson @ Info Tech</h3>
+            </div>
+            <p>
+                What is the Matrix?
+            </p>
+
+            <!-- POST INTERACTION FORM -->
+            <form action="/create_comment" method="POST">
+                <input type="text" name="comment" class="comment" placeholder="Type your comment here">
+                <button class="comment_btn" name="comment_btn">comment</button>
+                <button class="view_comments_btn" name="view_comments_btn">view comments</button>
+            </form>
+
+            <!-- COMMENTS SECTION -->
+            <ul>
+                <li></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <footer>&copyTechLink 2020</footer>
+
+</body>
+</html>
